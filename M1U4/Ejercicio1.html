@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Modulo1Unidad4 tarea:punto 1</title>
+</head>
+
+<body>
+  <script>
+  const metros = parseInt(prompt('Ingrese la distancia que desea realizar en metros:', ''));
+
+if (Number.isNaN(metros) || metros < 0) {
+    document.write('La distancia ingresada no es válida.');
+} else if (metros < 1000) {
+    document.write("Para recorrer esa distancia, a usted le conviene transportarse a pie.");
+} else if (metros >= 1000 && metros < 10000) {
+    document.write("Para recorrer esa distancia, a usted le conviene transportarse en bicicleta.");
+} else if (metros >= 10000 && metros < 30000) {
+    document.write("Para recorrer esa distancia, a usted le conviene transportarse en colectivo.");
+} else if (metros >= 30000 && metros < 100000) {
+    document.write("Para recorrer esa distancia, a usted le conviene transportarse en auto.");
+} else {
+    document.write("Para recorrer esa distancia, a usted le conviene transportarse en avión.");
+}
+  </script>
+
+
+</body>
+
+</html>

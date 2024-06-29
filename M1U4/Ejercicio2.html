@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <script>
+    const numeros = [10000, 1245, 28, 33033, 15010, 250, 50000, 6000000]
+    var mayor = numeros[0]
+
+    for (let i = 1; i < numeros.length; i++) {
+      if (numeros[i] > mayor) {
+        mayor = numeros[i];
+      }
+    }
+    console.log("El número mayor es: " + mayor);
+  </script>
+</body>
+
+</html>
